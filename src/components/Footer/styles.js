@@ -2,17 +2,57 @@ import styled from "styled-components";
 
 export const Footer = styled.footer`
   width: 100%;
-  height: 350px;
+  height: 650px;
   background-color: var(--color-secondary);
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 370px) {
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1920px) {
+    width: 100%;
+    height: 350px;
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const FooterSpaceInformation = styled.section`
-  width: 80%;
+  width: 90%;
   height: 100%;
+  margin: 0 auto;
+
+  @media screen and (min-width: 370px) {
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1920px) {
+    width: 80%;
+    height: 100%;
+  }
 `;
 
 export const FooterImgSpace = styled.div`
@@ -22,21 +62,75 @@ export const FooterImgSpace = styled.div`
   flex-flow: column nowrap;
   justify-content: center;
   align-items: end;
+  display: none;
+
+  @media screen and (min-width: 370px) {
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1920px) {
+    display: flex;
+  }
 `;
 
 export const FooterDivInfo = styled.div`
   width: 100%;
   height: 100%;
-  padding-left: 25%;
+  padding-left: 0%;
+
+  @media screen and (min-width: 370px) {
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1920px) {
+    padding-left: 25%;
+  }
 `;
 
 export const UpperFooterInfo = styled.div`
   width: 100%;
   height: 68%;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 370px) {
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1920px) {
+    width: 100%;
+    height: 68%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
 `;
 
 export const FooterInfoLogo = styled.div`
@@ -60,7 +154,7 @@ export const FooterInfoLogo = styled.div`
 `;
 
 export const SocialMediaSpace = styled.div`
-  width: 30%;
+  width: 90%;
   height: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -83,6 +177,27 @@ export const SocialMediaSpace = styled.div`
     align-items: center;
     width: 70%;
     height: 80px;
+  }
+
+  @media screen and (min-width: 370px) {
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1920px) {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
   }
 `;
 

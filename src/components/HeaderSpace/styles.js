@@ -3,41 +3,132 @@ import dropdownImg from "../../assets/img/dropdown.png";
 
 export const Header = styled.header`
   font-family: var(--font-primary-montserrat);
-  height: 80px;
   width: 100%;
-  background-color: var(--color-bg);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-navigation);
+  z-index: 1001;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: flex-start;
   align-items: flex-start;
+  transform: ${({ show }) => (show ? "translateX(0)" : "translateX(-100%)")};
+  transition: 0.7s ease-in-out;
+
+  @media screen and (min-width: 370px) {
+  }
+
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+    transform: none;
+    width: 100%;
+    height: 160px;
+    position: relative;
+    background-color: var(--blur-effect-02);
+    z-index: 1002;
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1920px) {
+    font-family: var(--font-primary-montserrat);
+    height: 80px;
+    width: 100%;
+    background-color: var(--color-bg);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 `;
 
 export const LogoSpace = styled.div`
-  width: 40%;
-  height: 100%;
+  width: 100%;
+  height: 20%;
   background-color: var(--color-bg);
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 370px) {
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1920px) {
+    width: 40%;
+    height: 100%;
+    background-color: var(--color-bg);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
 `;
 
 export const LogoImgLeft = styled.div`
   width: 30%;
   height: 100%;
+  display: none;
+
+  @media screen and (min-width: 370px) {
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1920px) {
+    display: flex;
+  }
 `;
 
 export const Logo = styled.div`
   width: 20%;
   height: 100%;
-  margin-left: 150px;
+  margin-left: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (min-width: 370px) {
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1920px) {
+    margin-left: 150px;
+  }
 `;
 
 export const NavBar = styled.div`
-  width: 60%;
+  width: 100%;
   height: 100%;
   position: relative;
   display: flex;
@@ -52,11 +143,12 @@ export const NavBar = styled.div`
     position: absolute;
     top: 0;
     left: 0;
+    display: none;
   }
 
   & > nav {
     background-color: var(--color-primary);
-    width: 97%;
+    width: 100%;
     height: 100%;
     display: flex;
     flex-flow: row nowrap;
@@ -66,9 +158,9 @@ export const NavBar = styled.div`
 
   & > nav > ul {
     width: 70%;
-    height: 60px;
+    height: 90%;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column nowrap;
     justify-content: space-evenly;
     align-items: center;
     margin-left: 50px;
@@ -191,5 +283,49 @@ export const NavBar = styled.div`
     background-color: var(--color-primary);
     border: 1px solid var(--color-primary);
     border-radius: var(--radius-10);
+  }
+
+  @media screen and (min-width: 370px) {
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1920px) {
+    width: 60%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+
+    & > div {
+      display: flex;
+    }
+
+    & > nav {
+      background-color: var(--color-primary);
+      width: 97%;
+      height: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    & > nav > ul {
+      width: 70%;
+      height: 60px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-left: 50px;
+    }
   }
 `;

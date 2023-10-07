@@ -2,6 +2,39 @@ import styled from "styled-components";
 import mainBanner from "../../assets/img/mainBanner.jpg";
 import categoryBanner from "../../assets/img/CategoryBanner.jpg";
 
+/*------------------------- Skip line -------------------------*/
+
+export const NavBarMenuBtn = styled.button`
+  width: 70px;
+  height: 50px;
+  position: fixed;
+  top: 10%;
+  left: 100%;
+  background-color: var(--color-grey-2);
+  border-radius: var(--radius-8);
+  z-index: 1010;
+  cursor: pointer;
+
+  & > svg {
+    transform: scale(1.5);
+  }
+
+  @media screen and (min-width: 370px) {
+    width: 60px;
+    left: 82%;
+  }
+  @media screen and (min-width: 480px) {
+    display: block;
+  }
+  @media screen and (min-width: 1024px) {
+    & {
+      display: none;
+    }
+  }
+`;
+
+/*------------------------- Skip line -------------------------*/
+
 export const MainBanner = styled.main`
   width: 100%;
   height: 800px;
@@ -17,9 +50,9 @@ export const MainBanner = styled.main`
 `;
 
 export const BannerTextSpace = styled.section`
-  width: 31%;
+  width: 90%;
   height: 80%;
-  margin-left: 20%;
+  margin: 0 auto;
 
   & > h1 {
     font-family: var(--font-primary-montserrat);
@@ -27,7 +60,7 @@ export const BannerTextSpace = styled.section`
     font-style: normal;
     font-weight: var(--font-weight-800);
     color: var(--color-white-mode);
-    font-size: var(--font-grand-60);
+    font-size: var(--font-subtitle-36);
     line-height: 80px;
   }
 
@@ -38,6 +71,27 @@ export const BannerTextSpace = styled.section`
     font-weight: var(--font-weight-400);
     font-size: var(--font-subtitle-18);
     line-height: 40px;
+  }
+
+  @media screen and (min-width: 370px) {
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1920px) {
+    margin-left: 20%;
+    width: 31%;
+
+    & > h1 {
+      font-size: var(--font-grand-60);
+    }
   }
 `;
 
@@ -52,7 +106,7 @@ export const ButtonSpace = styled.div`
 `;
 
 export const BannerButton1 = styled.button`
-  width: 360px;
+  width: 100%;
   height: 60px;
   background-color: var(--color-primary);
   box-shadow: 0px 0px 20px 4px #fbaf17;
@@ -65,10 +119,26 @@ export const BannerButton1 = styled.button`
   font-weight: var(--font-weight-700);
   text-transform: uppercase;
   cursor: pointer;
+
+  @media screen and (min-width: 370px) {
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1920px) {
+    width: 360px;
+  }
 `;
 
 export const BannerButton2 = styled.button`
-  width: 360px;
+  width: 100%;
   height: 60px;
   background-color: transparent;
   color: var(--color-white-mode);
@@ -80,6 +150,22 @@ export const BannerButton2 = styled.button`
   font-weight: var(--font-weight-700);
   text-transform: uppercase;
   cursor: pointer;
+
+  @media screen and (min-width: 370px) {
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1920px) {
+    width: 360px;
+  }
 `;
 
 export const AnchorSpace = styled.div`
@@ -105,32 +191,99 @@ export const AnchorSpace = styled.div`
 
 export const FeaturedProducts = styled.section`
   width: 100%;
-  height: 150vh;
+  height: 660vh;
   margin-top: 50px;
   position: relative;
   z-index: -1;
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 370px) {
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1920px) {
+    height: 150vh;
+  }
 `;
 
 export const FeatProductsImg = styled.div`
   width: 100%;
-  height: 460px;
+  height: 260px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
   z-index: -1;
+
+  & > img {
+    transform: scale(0.35);
+    background-position: center;
+  }
+
+  @media screen and (min-width: 370px) {
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    height: 460px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+
+    & > img {
+      transform: scale(1);
+    }
+  }
+  @media screen and (min-width: 1920px) {
+  }
 `;
 
 export const ProductsShowcase = styled.div`
-  width: 70%;
-  height: 105vh;
-  position: absolute;
-  top: 350px;
-  left: 20%;
+  width: 90%;
+  height: 500vh;
+  margin: 0 auto;
+  position: relative;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
   align-items: center;
+
+  @media screen and (min-width: 370px) {
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1920px) {
+    height: 105vh;
+    width: 70%;
+    position: absolute;
+    top: 350px;
+    left: 20%;
+  }
 `;
 
 /*-------------------- Skip line --------------------*/
@@ -227,6 +380,25 @@ export const PubliSpace = styled.section`
     font-weight: var(--font-weight-700);
     text-transform: uppercase;
     margin-bottom: 20px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 370px) {
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1920px) {
+    & > h1 {
+      text-align: start;
+    }
   }
 `;
 
@@ -234,19 +406,66 @@ export const PInfoSpace = styled.div`
   width: 100%;
   height: 515px;
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
   position: relative;
+
+  @media screen and (min-width: 370px) {
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1920px) {
+    width: 100%;
+    height: 515px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
 `;
 
 export const PImgSpace = styled.div`
   height: 100%;
   width: 50%;
+
+  & > img {
+    display: none;
+  }
+
+  @media screen and (min-width: 370px) {
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1920px) {
+    height: 100%;
+    width: 50%;
+
+    & > img {
+      display: flex;
+    }
+  }
 `;
 
 export const PInfo = styled.div`
-  width: 50%;
+  width: 90%;
   height: 100%;
   display: flex;
   justify-content: center;
@@ -255,16 +474,16 @@ export const PInfo = styled.div`
 
   & > p {
     padding-left: 20px;
-    width: 60%;
-    height: 60%;
+    width: 90%;
+    height: 100%;
     line-height: var(--font-line-height-28);
     font-family: var(--font-primary-montserrat);
-    font-size: var(--font-subtitle-18);
+    font-size: var(--font-text-16);
   }
 
   & > button {
     height: 60px;
-    width: 360px;
+    width: 90%;
     background-color: var(--color-tertiary);
     color: var(--color-white-mode);
     border: 1px solid var(--color-tertiary);
@@ -280,6 +499,34 @@ export const PInfo = styled.div`
   & > button:hover {
     opacity: 0.9;
   }
+
+  @media screen and (min-width: 370px) {
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1920px) {
+    width: 50%;
+    & > button {
+      width: 360px;
+    }
+
+    & > p {
+      padding-left: 20px;
+      width: 60%;
+      height: 60%;
+      line-height: var(--font-line-height-28);
+      font-family: var(--font-primary-montserrat);
+      font-size: var(--font-subtitle-18);
+    }
+  }
 `;
 
 export const LikedButton = styled.button`
@@ -291,12 +538,28 @@ export const LikedButton = styled.button`
   top: 80%;
   left: 21%;
   cursor: pointer;
+  display: none;
+
+  @media screen and (min-width: 370px) {
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1920px) {
+    display: block;
+  }
 `;
 
 export const ContactSpace = styled.section`
-  margin-top: 50px;
   width: 100%;
-  height: 460px;
+  height: 100px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-end;
@@ -309,14 +572,14 @@ export const ContactSpace = styled.section`
 
   & > button {
     position: absolute;
-    top: 75%;
-    left: 48%;
-    width: 360px;
-    height: 60px;
+    top: 35%;
+    left: 5%;
+    width: 90%;
+    height: 50px;
     background-color: var(--color-primary);
     color: var(--color-black-mode);
     font-family: var(--font-primary-montserrat);
-    font-size: var(--font-subtitle-18);
+    font-size: var(--font-text-16);
     font-weight: var(--font-weight-700);
     text-transform: uppercase;
     border: 1px solid var(--color-primary);
@@ -327,5 +590,46 @@ export const ContactSpace = styled.section`
 
   & > button:hover {
     opacity: 0.9;
+  }
+
+  @media screen and (min-width: 370px) {
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1920px) {
+    margin-top: 50px;
+    width: 100%;
+    height: 460px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+
+    & > button {
+      position: absolute;
+      top: 75%;
+      left: 48%;
+      width: 360px;
+      height: 60px;
+      background-color: var(--color-primary);
+      color: var(--color-black-mode);
+      font-family: var(--font-primary-montserrat);
+      font-size: var(--font-subtitle-18);
+      font-weight: var(--font-weight-700);
+      text-transform: uppercase;
+      border: 1px solid var(--color-primary);
+      border-radius: var(--radius-10);
+      box-shadow: 0px 0px 20px 4px #fbaf17;
+      cursor: pointer;
+    }
   }
 `;

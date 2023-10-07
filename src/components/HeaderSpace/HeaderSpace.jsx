@@ -4,7 +4,7 @@ import logoImg from "../../assets/img/logoImg.png";
 import logo from "../../assets/logo/logo.png";
 import { AuthContext } from "../../context/AuthContext";
 
-const HeaderSpace = () => {
+const HeaderSpace = ({ show }) => {
   const { categoryList, SpecialAlert } = useContext(AuthContext);
   const [showCategories, setShowCategories] = useState(false);
   const [isMouseOverCategory, setIsMouseOverCategory] = useState(false);
@@ -23,7 +23,7 @@ const HeaderSpace = () => {
 
   return (
     <>
-      <Header>
+      <Header show={show}>
         <LogoSpace>
           <LogoImgLeft>
             <img src={logoImg} alt="Img Balls" />

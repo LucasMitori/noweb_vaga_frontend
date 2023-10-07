@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ProductCard = styled.div`
   width: 270px;
-  height: 450px;
+  height: auto;
   background-color: var(--color-white-mode);
   border: 1px solid #dee2e6;
   border-radius: 18px;
@@ -13,6 +13,22 @@ export const ProductCard = styled.div`
   align-items: center;
   position: relative;
   margin-bottom: 20px;
+
+  @media screen and (min-width: 370px) {
+  }
+  @media screen and (min-width: 480px) {
+  }
+  @media screen and (min-width: 600px) {
+  }
+  @media screen and (min-width: 768px) {
+  }
+  @media screen and (min-width: 1024px) {
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1920px) {
+    height: 450px;
+  }
 `;
 
 export const ImageProduct = styled.div`

@@ -14,6 +14,7 @@ import {
   FeaturedProducts,
   LikedButton,
   MainBanner,
+  NavBarMenuBtn,
   PImgSpace,
   PInfo,
   PInfoSpace,
@@ -22,13 +23,15 @@ import {
 } from "./styles";
 import { IconContext } from "react-icons";
 import { AiOutlineArrowDown, AiFillLike } from "react-icons/ai";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { AuthContext } from "../../context/AuthContext";
 import featProductImg from "../../assets/img/FeaturedProducts.png";
+import featProductImg1 from "../../assets/img/FeaturedProducts01.png";
 import ProductItem from "../../components/ProductItem/ProductItem";
 import PubImage from "../../assets/img/publiBanner.png";
 import ContactImage from "../../assets/img/contactBanner.png";
 import FooterSpace from "../../components/Footer/FooterSpace";
+import { GiHamburgerMenu } from "react-icons/gi";
 
 const MainPage = () => {
   const {
@@ -37,11 +40,43 @@ const MainPage = () => {
     categoryList,
     handleClick,
     liked,
+    show,
+    setShow,
   } = useContext(AuthContext);
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const imgSrc = windowWidth >= 1920 ? featProductImg : featProductImg1;
+
+  function openMenu() {
+    setShow((current) => !current);
+  }
 
   return (
     <>
-      <HeaderSpace />
+      <NavBarMenuBtn onClick={() => openMenu()}>
+        <IconContext.Provider
+          value={{
+            color: "var(--color-grey-0)",
+          }}
+        >
+          <GiHamburgerMenu />
+        </IconContext.Provider>
+      </NavBarMenuBtn>
+
+      <HeaderSpace show={show} />
       <MainBanner>
         <BannerTextSpace>
           <h1>Ilumine o seu dia a dia!</h1>
@@ -75,9 +110,8 @@ const MainPage = () => {
 
       <FeaturedProducts id="section-products">
         <FeatProductsImg>
-          <img src={featProductImg} alt="Featured Products" />
+          <img src={imgSrc} alt="Featured Products" />
         </FeatProductsImg>
-
         <ProductsShowcase>
           {FeaturedProductsList.map((item, index) => (
             <ProductItem item={item} key={index} />
