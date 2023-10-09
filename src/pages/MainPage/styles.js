@@ -82,6 +82,12 @@ export const BannerTextSpace = styled.section`
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1024px) {
+    margin-left: 20%;
+    width: 31%;
+
+    & > h1 {
+      font-size: var(--font-grand-60);
+    }
   }
   @media screen and (min-width: 1200px) {
   }
@@ -129,6 +135,7 @@ export const BannerButton1 = styled.button`
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1024px) {
+    width: 360px;
   }
   @media screen and (min-width: 1200px) {
   }
@@ -160,6 +167,7 @@ export const BannerButton2 = styled.button`
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1024px) {
+    width: 360px;
   }
   @media screen and (min-width: 1200px) {
   }
@@ -206,6 +214,7 @@ export const FeaturedProducts = styled.section`
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1024px) {
+    height: 150vh;
   }
   @media screen and (min-width: 1200px) {
   }
@@ -237,6 +246,17 @@ export const FeatProductsImg = styled.div`
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1024px) {
+    width: 100%;
+    height: 460px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+
+    & > img {
+      transform: scale(1);
+    }
   }
   @media screen and (min-width: 1200px) {
     width: 100%;
@@ -274,6 +294,11 @@ export const ProductsShowcase = styled.div`
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1024px) {
+    height: 105vh;
+    width: 70%;
+    position: absolute;
+    top: 350px;
+    left: 20%;
   }
   @media screen and (min-width: 1200px) {
   }
@@ -367,7 +392,7 @@ export const CategoryListSpace = styled.div`
 
 export const PubliSpace = styled.section`
   width: 100%;
-  height: 780px;
+  height: 880px;
   background-color: #f7f7f7;
   display: flex;
   justify-content: center;
@@ -392,6 +417,9 @@ export const PubliSpace = styled.section`
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1024px) {
+    & > h1 {
+      text-align: start;
+    }
   }
   @media screen and (min-width: 1200px) {
   }
@@ -420,6 +448,13 @@ export const PInfoSpace = styled.div`
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1024px) {
+    width: 100%;
+    height: 815px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    position: relative;
   }
   @media screen and (min-width: 1200px) {
   }
@@ -437,6 +472,8 @@ export const PInfoSpace = styled.div`
 export const PImgSpace = styled.div`
   height: 100%;
   width: 50%;
+  justify-content: center;
+  align-items: center;
 
   & > img {
     display: none;
@@ -451,6 +488,12 @@ export const PImgSpace = styled.div`
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1024px) {
+    height: 100%;
+    width: 60%;
+
+    & > img {
+      display: flex;
+    }
   }
   @media screen and (min-width: 1200px) {
   }
@@ -509,6 +552,20 @@ export const PInfo = styled.div`
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1024px) {
+    width: 50%;
+
+    & > button {
+      width: 360px;
+    }
+
+    & > p {
+      padding-left: 20px;
+      width: 60%;
+      height: 60%;
+      line-height: var(--font-line-height-28);
+      font-family: var(--font-primary-montserrat);
+      font-size: var(--font-subtitle-18);
+    }
   }
   @media screen and (min-width: 1200px) {
   }
@@ -549,6 +606,9 @@ export const LikedButton = styled.button`
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1024px) {
+    display: block;
+    top: 50%;
+    left: 18%;
   }
   @media screen and (min-width: 1200px) {
   }
@@ -601,6 +661,32 @@ export const ContactSpace = styled.section`
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1024px) {
+    margin-top: 50px;
+    width: 100%;
+    height: 460px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+
+    & > button {
+      position: absolute;
+      top: 60%;
+      left: 48%;
+      width: 360px;
+      height: 60px;
+      background-color: var(--color-primary);
+      color: var(--color-black-mode);
+      font-family: var(--font-primary-montserrat);
+      font-size: var(--font-subtitle-18);
+      font-weight: var(--font-weight-700);
+      text-transform: uppercase;
+      border: 1px solid var(--color-primary);
+      border-radius: var(--radius-10);
+      box-shadow: 0px 0px 20px 4px #fbaf17;
+      cursor: pointer;
+    }
   }
   @media screen and (min-width: 1200px) {
   }

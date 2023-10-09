@@ -18,6 +18,13 @@ export const Footer = styled.footer`
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1024px) {
+    width: 100%;
+    height: 350px;
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
   }
   @media screen and (min-width: 1200px) {
   }
@@ -46,6 +53,8 @@ export const FooterSpaceInformation = styled.section`
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1024px) {
+    width: 80%;
+    height: 100%;
   }
   @media screen and (min-width: 1200px) {
   }
@@ -73,6 +82,7 @@ export const FooterImgSpace = styled.div`
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1024px) {
+    display: flex;
   }
   @media screen and (min-width: 1200px) {
   }
@@ -95,6 +105,7 @@ export const FooterDivInfo = styled.div`
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1024px) {
+    padding-left: 25%;
   }
   @media screen and (min-width: 1200px) {
   }
@@ -120,6 +131,12 @@ export const UpperFooterInfo = styled.div`
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1024px) {
+    width: 100%;
+    height: 68%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
   }
   @media screen and (min-width: 1200px) {
   }
@@ -188,6 +205,12 @@ export const SocialMediaSpace = styled.div`
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1024px) {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-items: center;
   }
   @media screen and (min-width: 1200px) {
   }

@@ -28,23 +28,21 @@ export const Header = styled.header`
   }
   @media screen and (min-width: 1024px) {
     transform: none;
-    width: 100%;
-    height: 160px;
     position: relative;
     background-color: var(--blur-effect-02);
     z-index: 1002;
-  }
-  @media screen and (min-width: 1200px) {
-  }
-  @media screen and (min-width: 1920px) {
-    font-family: var(--font-primary-montserrat);
-    height: 80px;
-    width: 100%;
-    background-color: var(--color-bg);
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: flex-start;
+    font-family: var(--font-primary-montserrat);
+    height: 80px;
+    width: 100%;
+    background-color: var(--color-bg);
+  }
+  @media screen and (min-width: 1200px) {
+  }
+  @media screen and (min-width: 1920px) {
   }
 `;
 
@@ -66,6 +64,13 @@ export const LogoSpace = styled.div`
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1024px) {
+    width: 40%;
+    height: 100%;
+    background-color: var(--color-bg);
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
   }
   @media screen and (min-width: 1200px) {
   }
@@ -94,6 +99,7 @@ export const LogoImgLeft = styled.div`
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1024px) {
+    display: flex;
   }
   @media screen and (min-width: 1200px) {
   }
@@ -119,6 +125,7 @@ export const Logo = styled.div`
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1024px) {
+    margin-left: 150px;
   }
   @media screen and (min-width: 1200px) {
   }
@@ -294,6 +301,35 @@ export const NavBar = styled.div`
   @media screen and (min-width: 768px) {
   }
   @media screen and (min-width: 1024px) {
+    width: 60%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+
+    & > div {
+      display: flex;
+    }
+
+    & > nav {
+      background-color: var(--color-primary);
+      width: 97%;
+      height: 100%;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    & > nav > ul {
+      width: 70%;
+      height: 60px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-evenly;
+      align-items: center;
+      margin-left: 50px;
+    }
   }
   @media screen and (min-width: 1200px) {
   }
